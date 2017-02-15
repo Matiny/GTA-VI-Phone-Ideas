@@ -1,0 +1,257 @@
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(../images/bgs/popupbg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  background-position: center bottom; }
+
+.content {
+  height: 100vh;
+  width: 100vw; }
+
+.phone-svg {
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.screen {
+  height: 100vh;
+  width: 50vh;
+  position: absolute;
+  z-index: 1;
+  left: 85%;
+  transform: translateX(-85%);
+}
+
+.text {
+  height: 100%;
+  width: 50%;
+  color: white;
+  display: block;
+  text-align: center;
+  left: 0%;
+  margin: auto;
+  font-family: "Arial";
+  font-size: 2.5vh;
+  line-height: 4vh;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+}
+
+.text p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: auto;
+  width: 90%;
+}
+
+.row0 p {
+  color: white;
+  font-size: 2vh;
+  font-family: Arial;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.app {
+    z-index: 0;
+    top: 10.5%;
+    opacity: 0;
+    width: 86%;
+    left: 7%;
+    transform: scale(.85);
+    transition: all .5s;
+}
+
+.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.icon1 {
+   height: 50%;
+   top: 0;
+   right: 10%;
+}
+
+.icon2 {
+   height: 40%;
+   top: 0;
+   left: 10%;
+}
+
+
+.clock {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.day {
+    left: 20%;
+    transform: translateX(-20%);
+}
+
+.screen * {
+    position: absolute;
+}
+
+.screen > div:not(.row0) {
+  height: 12vh;
+  width: 100%; }
+
+.row0 {
+  top: 11vh;
+  height: 6vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.row1 {
+  top: 17vh; }
+
+.row2 {
+  top: 34vh; }
+
+.row3 {
+  top: 51vh; }
+
+.row1 img {
+  height: 100%; }
+  .row1 img:nth-child(1) {
+    left: 15%;
+    transform: translateX(-15%); }
+  .row1 img:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%); }
+  .row1 img:nth-child(3) {
+    left: 85%;
+    transform: translateX(-85%); }
+.row1 img:hover {
+    cursor: pointer;
+}
+
+.row2 img {
+  height: 100%; }
+  .row2 img:nth-child(1) {
+    left: 15%;
+    transform: translateX(-15%); }
+  .row2 img:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%); }
+  .row2 img:nth-child(3) {
+    left: 85%;
+    transform: translateX(-85%); }
+.row2 img:hover {
+    cursor: pointer;
+}
+
+.row3 img {
+  height: 100%;}
+  .row3 img:nth-child(1) {
+    left: 15%;
+    transform: translateX(-15%); }
+  .row3 img:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%); }
+  .row3 img:nth-child(3) {
+    left: 85%;
+    transform: translateX(-85%); }
+.row3 img:hover {
+    cursor: pointer;
+}
+
+@keyframes home-button {
+   0% {opacity: 0;}
+   50% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+#close {
+    height: 8vh;
+    width: 8vh;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    bottom: 2.5vh;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: home-button infinite 2s;
+}
+@media screen and (max-width:900px) {
+   body {
+     height: 100vh;
+     width: 100vw;
+     background: url(../images/bgs/mobile-bg.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     min-height: 100%;
+     width: 100%;
+     background-position: center bottom; }
+
+   .text {
+      position: relative;
+      height: auto;
+      width: 100%;
+      background: none;
+      font-size: 5vw;
+      line-height: 8vw;
+   }
+
+   .text p {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      margin-top: 10%;
+   }
+
+   .screen {
+     height: 200vw;
+     width: 100%;
+     position: relative;
+     z-index: 1;
+     margin: 10% auto 0 auto;
+   }
+
+   .row0 {
+     top: 11%;
+     height: 6%;
+   }
+
+   .screen > div:not(.row0) {
+     height: 12%;
+     width: 100%; }
+
+   .row1 {
+     top: 17%; }
+
+   .row2 {
+     top: 34%; }
+
+   .row3 {
+     top: 51%; }
+
+   .row0 p {
+      font-size: 4vw;
+   }
+   #close {
+       height: 16vw;
+       width: 16vw;
+       bottom: 2.5%;
+   }
+
+}
